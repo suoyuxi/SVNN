@@ -1,2 +1,2 @@
 # SVNN
-A Spatially Variant Convolution Neural Network for Sidelobe Suppression in SAR Image
+Spatially Variant Filtering Network Based on Generalized Optimal Constraints for Sidelobe Suppression in SAR Images
