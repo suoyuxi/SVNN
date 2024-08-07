@@ -1,0 +1,404 @@
+Using device cuda
+Starting training:                filter_length:  15
+Starting training:        Start Epoch:     0        Epochs:          100        Batch size:      64        Learning rate:   1.0        Device:          cuda
+trainLoss-(alpha:0.1)-(beta:0.7)-(gamma:0.7)
+epoch : 1 learninf rate : [1.0]
+Validation error to signal ratio 0.10999097675085068
+Checkpoint 1 saved !
+epoch_loss: 40.94226210284978
+epoch : 2 learninf rate : [1.0]
+Validation error to signal ratio 0.08370893448591232
+Checkpoint 2 saved !
+epoch_loss: 28.264562018215656
+epoch : 3 learninf rate : [1.0]
+Validation error to signal ratio 0.07248108088970184
+Checkpoint 3 saved !
+epoch_loss: 23.002600490115583
+epoch : 4 learninf rate : [1.0]
+Validation error to signal ratio 0.05399097874760628
+Checkpoint 4 saved !
+epoch_loss: 19.533885849639773
+epoch : 5 learninf rate : [1.0]
+Validation error to signal ratio 0.0589178204536438
+Checkpoint 5 saved !
+epoch_loss: 17.890619582962245
+epoch : 6 learninf rate : [1.0]
+Validation error to signal ratio 0.04625630006194115
+Checkpoint 6 saved !
+epoch_loss: 16.07307560229674
+epoch : 7 learninf rate : [1.0]
+Validation error to signal ratio 0.044027503579854965
+Checkpoint 7 saved !
+epoch_loss: 14.815499910153449
+epoch : 8 learninf rate : [1.0]
+Validation error to signal ratio 0.04073261469602585
+Checkpoint 8 saved !
+epoch_loss: 13.787458902224898
+epoch : 9 learninf rate : [1.0]
+Validation error to signal ratio 0.03967175632715225
+Checkpoint 9 saved !
+epoch_loss: 13.214540506247431
+epoch : 10 learninf rate : [1.0]
+Validation error to signal ratio 0.03479331359267235
+Checkpoint 10 saved !
+epoch_loss: 12.605568466242403
+epoch : 11 learninf rate : [1.0]
+Validation error to signal ratio 0.03360109403729439
+Checkpoint 11 saved !
+epoch_loss: 12.12281439639628
+epoch : 12 learninf rate : [1.0]
+Validation error to signal ratio 0.03779517114162445
+Checkpoint 12 saved !
+epoch_loss: 11.357511098496616
+epoch : 13 learninf rate : [1.0]
+Validation error to signal ratio 0.03620534390211105
+Checkpoint 13 saved !
+epoch_loss: 11.271412557922304
+epoch : 14 learninf rate : [1.0]
+Validation error to signal ratio 0.03275006636977196
+Checkpoint 14 saved !
+epoch_loss: 10.89986674953252
+epoch : 15 learninf rate : [1.0]
+Validation error to signal ratio 0.03211674466729164
+Checkpoint 15 saved !
+epoch_loss: 10.47959085740149
+epoch : 16 learninf rate : [1.0]
+Validation error to signal ratio 0.029528029263019562
+Checkpoint 16 saved !
+epoch_loss: 10.232913963962346
+epoch : 17 learninf rate : [1.0]
+Validation error to signal ratio 0.031768832355737686
+Checkpoint 17 saved !
+epoch_loss: 10.128672930411994
+epoch : 18 learninf rate : [1.0]
+Validation error to signal ratio 0.028239648789167404
+Checkpoint 18 saved !
+epoch_loss: 9.702130744699389
+epoch : 19 learninf rate : [1.0]
+Validation error to signal ratio 0.027977509424090385
+Checkpoint 19 saved !
+epoch_loss: 9.46811745967716
+epoch : 20 learninf rate : [1.0]
+Validation error to signal ratio 0.02655925042927265
+Checkpoint 20 saved !
+epoch_loss: 9.432957886252552
+epoch : 21 learninf rate : [1.0]
+Validation error to signal ratio 0.030659738928079605
+Checkpoint 21 saved !
+epoch_loss: 9.116555524989963
+epoch : 22 learninf rate : [1.0]
+Validation error to signal ratio 0.02665022388100624
+Checkpoint 22 saved !
+epoch_loss: 9.001591192092746
+epoch : 23 learninf rate : [1.0]
+Validation error to signal ratio 0.026432044804096222
+Checkpoint 23 saved !
+epoch_loss: 8.82470759213902
+epoch : 24 learninf rate : [1.0]
+Validation error to signal ratio 0.027347715571522713
+Checkpoint 24 saved !
+epoch_loss: 8.709072932600975
+epoch : 25 learninf rate : [1.0]
+Validation error to signal ratio 0.026972845196723938
+Checkpoint 25 saved !
+epoch_loss: 8.506118858233094
+epoch : 26 learninf rate : [1.0]
+Validation error to signal ratio 0.025760404765605927
+Checkpoint 26 saved !
+epoch_loss: 8.50970613071695
+epoch : 27 learninf rate : [1.0]
+Validation error to signal ratio 0.02706827223300934
+Checkpoint 27 saved !
+epoch_loss: 8.226677511585876
+epoch : 28 learninf rate : [1.0]
+Validation error to signal ratio 0.024813063442707062
+Checkpoint 28 saved !
+epoch_loss: 8.111289148684591
+epoch : 29 learninf rate : [1.0]
+Validation error to signal ratio 0.026651140302419662
+Checkpoint 29 saved !
+epoch_loss: 8.06781995925121
+epoch : 30 learninf rate : [1.0]
+Validation error to signal ratio 0.024059345945715904
+Checkpoint 30 saved !
+epoch_loss: 7.995800881879404
+epoch : 31 learninf rate : [1.0]
+Validation error to signal ratio 0.023900270462036133
+Checkpoint 31 saved !
+epoch_loss: 7.725722447969019
+epoch : 32 learninf rate : [1.0]
+Validation error to signal ratio 0.023626675829291344
+Checkpoint 32 saved !
+epoch_loss: 7.7218496955465525
+epoch : 33 learninf rate : [1.0]
+Validation error to signal ratio 0.024981841444969177
+Checkpoint 33 saved !
+epoch_loss: 7.638510580174625
+epoch : 34 learninf rate : [1.0]
+Validation error to signal ratio 0.02278665453195572
+Checkpoint 34 saved !
+epoch_loss: 7.580642913468182
+epoch : 35 learninf rate : [1.0]
+Validation error to signal ratio 0.021725308150053024
+Checkpoint 35 saved !
+epoch_loss: 7.452114343876019
+epoch : 36 learninf rate : [1.0]
+Validation error to signal ratio 0.022174730896949768
+Checkpoint 36 saved !
+epoch_loss: 7.340689033269882
+epoch : 37 learninf rate : [1.0]
+Validation error to signal ratio 0.023341570049524307
+Checkpoint 37 saved !
+epoch_loss: 7.425871825078502
+epoch : 38 learninf rate : [1.0]
+Validation error to signal ratio 0.023187924176454544
+Checkpoint 38 saved !
+epoch_loss: 7.285714481957257
+epoch : 39 learninf rate : [1.0]
+Validation error to signal ratio 0.02253091335296631
+Checkpoint 39 saved !
+epoch_loss: 7.124500619014725
+epoch : 40 learninf rate : [1.0]
+Validation error to signal ratio 0.0246135201305151
+Checkpoint 40 saved !
+epoch_loss: 7.1285949451848865
+epoch : 41 learninf rate : [1.0]
+Validation error to signal ratio 0.024620553478598595
+Checkpoint 41 saved !
+epoch_loss: 7.054311758140102
+epoch : 42 learninf rate : [1.0]
+Validation error to signal ratio 0.02598205767571926
+Checkpoint 42 saved !
+epoch_loss: 6.979599874699488
+epoch : 43 learninf rate : [1.0]
+Validation error to signal ratio 0.022079957649111748
+Checkpoint 43 saved !
+epoch_loss: 6.894702567020431
+epoch : 44 learninf rate : [1.0]
+Validation error to signal ratio 0.022267961874604225
+Checkpoint 44 saved !
+epoch_loss: 6.906458400655538
+epoch : 45 learninf rate : [1.0]
+Validation error to signal ratio 0.020990043878555298
+Checkpoint 45 saved !
+epoch_loss: 6.740278830053285
+epoch : 46 learninf rate : [1.0]
+Validation error to signal ratio 0.021986670792102814
+Checkpoint 46 saved !
+epoch_loss: 6.6833652183413506
+epoch : 47 learninf rate : [1.0]
+Validation error to signal ratio 0.02082592248916626
+Checkpoint 47 saved !
+epoch_loss: 6.646625347668305
+epoch : 48 learninf rate : [1.0]
+Validation error to signal ratio 0.024352887645363808
+Checkpoint 48 saved !
+epoch_loss: 6.546159350546077
+epoch : 49 learninf rate : [1.0]
+Validation error to signal ratio 0.02214224822819233
+Checkpoint 49 saved !
+epoch_loss: 6.534437810303643
+epoch : 50 learninf rate : [1.0]
+Validation error to signal ratio 0.021741298958659172
+Checkpoint 50 saved !
+epoch_loss: 6.439884097315371
+epoch : 51 learninf rate : [1.0]
+Validation error to signal ratio 0.02261205017566681
+Checkpoint 51 saved !
+epoch_loss: 6.3452685384545475
+epoch : 52 learninf rate : [1.0]
+Validation error to signal ratio 0.023005522787570953
+Checkpoint 52 saved !
+epoch_loss: 6.376134323654696
+epoch : 53 learninf rate : [1.0]
+Validation error to signal ratio 0.02279411256313324
+Checkpoint 53 saved !
+epoch_loss: 6.29850201215595
+epoch : 54 learninf rate : [1.0]
+Validation error to signal ratio 0.02233080193400383
+Checkpoint 54 saved !
+epoch_loss: 6.295353192137554
+epoch : 55 learninf rate : [1.0]
+Validation error to signal ratio 0.021511131897568703
+Checkpoint 55 saved !
+epoch_loss: 6.2822773163206875
+epoch : 56 learninf rate : [1.0]
+Validation error to signal ratio 0.02178794890642166
+Checkpoint 56 saved !
+epoch_loss: 6.224170410307124
+epoch : 57 learninf rate : [1.0]
+Validation error to signal ratio 0.020501870661973953
+Checkpoint 57 saved !
+epoch_loss: 6.153864084975794
+epoch : 58 learninf rate : [1.0]
+Validation error to signal ratio 0.019398493692278862
+Checkpoint 58 saved !
+epoch_loss: 6.0534614296630025
+epoch : 59 learninf rate : [1.0]
+Validation error to signal ratio 0.019426481798291206
+Checkpoint 59 saved !
+epoch_loss: 6.036211177241057
+epoch : 60 learninf rate : [1.0]
+Validation error to signal ratio 0.021891433745622635
+Checkpoint 60 saved !
+epoch_loss: 5.965349451638758
+epoch : 61 learninf rate : [1.0]
+Validation error to signal ratio 0.021906739100813866
+Checkpoint 61 saved !
+epoch_loss: 5.948416699422523
+epoch : 62 learninf rate : [1.0]
+Validation error to signal ratio 0.020338892936706543
+Checkpoint 62 saved !
+epoch_loss: 5.913880786625668
+epoch : 63 learninf rate : [1.0]
+Validation error to signal ratio 0.021012356504797935
+Checkpoint 63 saved !
+epoch_loss: 5.865118441637605
+epoch : 64 learninf rate : [1.0]
+Validation error to signal ratio 0.020991642028093338
+Checkpoint 64 saved !
+epoch_loss: 5.9094797351863235
+epoch : 65 learninf rate : [1.0]
+Validation error to signal ratio 0.020633812993764877
+Checkpoint 65 saved !
+epoch_loss: 5.834060248686001
+epoch : 66 learninf rate : [1.0]
+Validation error to signal ratio 0.021184230223298073
+Checkpoint 66 saved !
+epoch_loss: 5.798658799845725
+epoch : 67 learninf rate : [1.0]
+Validation error to signal ratio 0.018922651186585426
+Checkpoint 67 saved !
+epoch_loss: 5.707286735530943
+epoch : 68 learninf rate : [1.0]
+Validation error to signal ratio 0.019664792343974113
+Checkpoint 68 saved !
+epoch_loss: 5.6899682614021
+epoch : 69 learninf rate : [1.0]
+Validation error to signal ratio 0.018752971664071083
+Checkpoint 69 saved !
+epoch_loss: 5.735870680306107
+epoch : 70 learninf rate : [1.0]
+Validation error to signal ratio 0.01908896118402481
+Checkpoint 70 saved !
+epoch_loss: 5.623042842373252
+epoch : 71 learninf rate : [1.0]
+Validation error to signal ratio 0.019199762493371964
+Checkpoint 71 saved !
+epoch_loss: 5.580401799408719
+epoch : 72 learninf rate : [1.0]
+Validation error to signal ratio 0.018428321927785873
+Checkpoint 72 saved !
+epoch_loss: 5.5861592933069915
+epoch : 73 learninf rate : [1.0]
+Validation error to signal ratio 0.020061202347278595
+Checkpoint 73 saved !
+epoch_loss: 5.516553551424295
+epoch : 74 learninf rate : [1.0]
+Validation error to signal ratio 0.01939108408987522
+Checkpoint 74 saved !
+epoch_loss: 5.535660695750266
+epoch : 75 learninf rate : [1.0]
+Validation error to signal ratio 0.01839348115026951
+Checkpoint 75 saved !
+epoch_loss: 5.474545524921268
+epoch : 76 learninf rate : [1.0]
+Validation error to signal ratio 0.01841980405151844
+Checkpoint 76 saved !
+epoch_loss: 5.45619627321139
+epoch : 77 learninf rate : [1.0]
+Validation error to signal ratio 0.0186901967972517
+Checkpoint 77 saved !
+epoch_loss: 5.41121083823964
+epoch : 78 learninf rate : [1.0]
+Validation error to signal ratio 0.018426530063152313
+Checkpoint 78 saved !
+epoch_loss: 5.348217249149457
+epoch : 79 learninf rate : [1.0]
+Validation error to signal ratio 0.019732283428311348
+Checkpoint 79 saved !
+epoch_loss: 5.340105458395556
+epoch : 80 learninf rate : [1.0]
+Validation error to signal ratio 0.01866048201918602
+Checkpoint 80 saved !
+epoch_loss: 5.280698388349265
+epoch : 81 learninf rate : [1.0]
+Validation error to signal ratio 0.018616393208503723
+Checkpoint 81 saved !
+epoch_loss: 5.304343435913324
+epoch : 82 learninf rate : [1.0]
+Validation error to signal ratio 0.018665561452507973
+Checkpoint 82 saved !
+epoch_loss: 5.250742010306567
+epoch : 83 learninf rate : [1.0]
+Validation error to signal ratio 0.020222919061779976
+Checkpoint 83 saved !
+epoch_loss: 5.2926525559742
+epoch : 84 learninf rate : [1.0]
+Validation error to signal ratio 0.019567111507058144
+Checkpoint 84 saved !
+epoch_loss: 5.2017726777121425
+epoch : 85 learninf rate : [1.0]
+Validation error to signal ratio 0.01867489144206047
+Checkpoint 85 saved !
+epoch_loss: 5.158596981316805
+epoch : 86 learninf rate : [1.0]
+Validation error to signal ratio 0.01831863820552826
+Checkpoint 86 saved !
+epoch_loss: 5.2229517051018775
+epoch : 87 learninf rate : [1.0]
+Validation error to signal ratio 0.017815861850976944
+Checkpoint 87 saved !
+epoch_loss: 5.094811680959538
+epoch : 88 learninf rate : [1.0]
+Validation error to signal ratio 0.017972728237509727
+Checkpoint 88 saved !
+epoch_loss: 5.117631590459496
+epoch : 89 learninf rate : [1.0]
+Validation error to signal ratio 0.0183713436126709
+Checkpoint 89 saved !
+epoch_loss: 5.094715420855209
+epoch : 90 learninf rate : [1.0]
+Validation error to signal ratio 0.01876414753496647
+Checkpoint 90 saved !
+epoch_loss: 5.245422267355025
+epoch : 91 learninf rate : [1.0]
+Validation error to signal ratio 0.020496146753430367
+Checkpoint 91 saved !
+epoch_loss: 5.083853632910177
+epoch : 92 learninf rate : [1.0]
+Validation error to signal ratio 0.0179633516818285
+Checkpoint 92 saved !
+epoch_loss: 5.09393732342869
+epoch : 93 learninf rate : [1.0]
+Validation error to signal ratio 0.018014732748270035
+Checkpoint 93 saved !
+epoch_loss: 5.102353095309809
+epoch : 94 learninf rate : [1.0]
+Validation error to signal ratio 0.018247203901410103
+Checkpoint 94 saved !
+epoch_loss: 5.001685259863734
+epoch : 95 learninf rate : [1.0]
+Validation error to signal ratio 0.01767618954181671
+Checkpoint 95 saved !
+epoch_loss: 4.970434873830527
+epoch : 96 learninf rate : [1.0]
+Validation error to signal ratio 0.01753314957022667
+Checkpoint 96 saved !
+epoch_loss: 4.943390094907954
+epoch : 97 learninf rate : [1.0]
+Validation error to signal ratio 0.019021863117814064
+Checkpoint 97 saved !
+epoch_loss: 4.9118899293243885
+epoch : 98 learninf rate : [1.0]
+Validation error to signal ratio 0.01810457929968834
+Checkpoint 98 saved !
+epoch_loss: 4.8699889678973705
+epoch : 99 learninf rate : [1.0]
+Validation error to signal ratio 0.017715398222208023
+Checkpoint 99 saved !
+epoch_loss: 4.832397430203855
+epoch : 100 learninf rate : [0.010000000000000002]
+Validation error to signal ratio 0.01889452151954174
+Checkpoint 100 saved !
+epoch_loss: 4.816118109738454

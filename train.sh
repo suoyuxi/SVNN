@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES='0' python train.py --learning-rate 1.0 --epoch_start 0 --epochs 100 --batch-size 64 --checkpoint workdir/ --filter-length 15
