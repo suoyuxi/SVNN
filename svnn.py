@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 
 import sys 
+import time
 
 class Mish(nn.Module):
 
@@ -169,10 +170,53 @@ class svnn(nn.Module):
 
         return F.normalize(out_result, p=float('inf'), dim=2, eps=1e-12, out=None)
 
+class LeNet(nn.Module):
+
+    def __init__(self, seqLength=512):
+        super(LeNet, self).__init__()
+
+        self.conv = nn.Sequential(
+            nn.Conv1d(1, 10, kernel_size=31, padding=31//2),
+            nn.ReLU(inplace=True),
+            nn.Conv1d(10, 10, kernel_size=21, padding=21//2),
+            nn.ReLU(inplace=True),
+            nn.Conv1d(10, 10, kernel_size=15, padding=15//2),
+            nn.ReLU(inplace=True),
+            nn.Conv1d(10,  3, kernel_size=11, padding=11//2),
+            nn.ReLU(inplace=True),
+            nn.Flatten(),
+            )
+
+        self.fc = nn.Linear(3*seqLength, seqLength)
+
+    def forward(self, x):
+
+        x = self.conv(x)
+        x = self.fc(x)
+        x = torch.unsqueeze(x, dim=1)
+
+        return x
+
 if __name__ == '__main__':
+
+    # test svnn
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = svnn(filter_length=15).to(device=device)
-    data_in = torch.randn((64,1,512)).to(device=device)
+    data_in = torch.randn((512,1,512)).to(device=device)
 
+    start = time.perf_counter()
     data_out = model(data_in)
-    print(data_out.size())
+    end = time.perf_counter()
+    runTime = end - start
+    print("运行时间：", runTime)
+
+    # test LeNet
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model = LeNet(seqLength=512).to(device=device)
+    data_in = torch.randn((512,1,512)).to(device=device)
+
+    start = time.perf_counter()
+    data_out = model(data_in)
+    end = time.perf_counter()
+    runTime = end - start
+    print("运行时间：", runTime)
