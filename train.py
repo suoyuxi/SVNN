@@ -12,7 +12,7 @@ from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
 
 from dataset import BasicDataset
-from svnn import svnn
+from svnn import svnn, LeNet
 from eval import eval
 
 class trainLoss(nn.Module):
@@ -62,12 +62,12 @@ def train_net(net,
         Learning rate:   {}\
         Device:          {}'.format(epoch_start,epochs,batch_size,lr,device.type))
 
-    # optimizer = optim.Adam(net.parameters(), lr=lr, betas=(0.9,0.99))
-    optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9)
-    scheduler = lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1)
-    # criterion = nn.BCELoss()
-    # criterion = nn.MSELoss()
-    criterion = trainLoss()
+    # optimizer = optim.Adam(net.parameters(), lr=lr, betas=(0.9,0.99)) # Adam for LeNet
+    optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9) # SGD for svnn
+    scheduler = lr_scheduler.StepLR(optimizer, step_size=100, gamma=0.1) 
+    
+    # criterion = nn.MSELoss() # MSE for LeNet
+    criterion = trainLoss() # specially designed loss for svnn
     logger.info('trainLoss-(alpha:{})-(beta:{})-(gamma:{})'.format(criterion.alpha, criterion.beta, criterion.gamma))
 
     for epoch in range(epoch_start, epoch_start+epochs):
@@ -76,23 +76,23 @@ def train_net(net,
         with tqdm(total=len(trainset), desc='Epoch {}/{}'.format(epoch+1,epochs+epoch_start)) as pbar:
             cnt_sample = 0
             for sample,gt in train_loader:
-                #load data to GPU or CPU
+                # load data to GPU or CPU
                 sample = sample.to(device=device, dtype=torch.float32)
                 gt = gt.to(device=device, dtype=torch.float32)
-                #forward inference
+                # forward inference
                 out_result = net(sample)
                 loss = criterion(out_result, gt, sample)
                 epoch_loss += loss.item()
-                #show the loss and process
+                # show the loss and process
                 pbar.set_postfix({'loss for one sample': loss.item()})
-                #bp
+                # bp
                 optimizer.zero_grad()
                 loss.backward()
                 
                 optimizer.step()
-                #update par
+                # update par
                 pbar.update(sample.shape[0])
-                #val for each 1500 iterations
+                # val for each 1500 iterations
                 cnt_sample = cnt_sample + 1
         
         scheduler.step()
@@ -135,23 +135,24 @@ def get_args():
 
 
 if __name__ == '__main__':
-    #parse the args
+    # parse the args
     args = get_args()
     #make checkpoint dir
     os.makedirs(args.checkpoint, exist_ok=True)
-    #set up log
+    # set up log
     logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
     logger = logging.getLogger()
-    #log out
+    # log out
     txt_handler = logging.FileHandler(os.path.join(args.checkpoint, 'log.txt'), mode='a')
     txt_handler.setLevel(logging.INFO)
     logger.addHandler(txt_handler)
-    #lock GPU or CPU
+    # lock GPU or CPU
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logger.info('Using device {}'.format(device))
 
-    #load the unet
-    net = svnn(filter_length=args.filter_length)
+    #load the net
+    net = svnn(filter_length=args.filter_length) # svnn
+    # net = LeNet(seqLength=512) # shallow LeNet
     logger.info('Starting training:\
                 filter_length:  {}'.format(args.filter_length))
     if args.load:
